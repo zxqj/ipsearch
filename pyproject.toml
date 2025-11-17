@@ -1,0 +1,26 @@
+[project]
+name = "ipsearch"
+version = "0.1"
+description = ""
+readme = "README.md"
+authors = [{name = ""}]
+license = "Apache-2.0"
+requires-python = ">=3.8"
+classifiers = []
+dependencies = [
+    "click",
+    "sh",
+    "rich",
+    "PyYAML",
+    "psutil>=7.1.3",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+ipsearch = "ipsearch.cli:cli"
+
+[project.optional-dependencies]
+test = ["pytest"]
